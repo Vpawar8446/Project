@@ -1,0 +1,12 @@
+C:\Users\niles\source\repos\Project\HRMSAPI\bin\Debug\net5.0\HRMSAPI.deps.json
+C:\Users\niles\source\repos\Project\HRMSAPI\bin\Debug\net5.0\HRMSAPI.dll
+C:\Users\niles\source\repos\Project\HRMSAPI\bin\Debug\net5.0\ref\HRMSAPI.dll
+C:\Users\niles\source\repos\Project\HRMSAPI\bin\Debug\net5.0\HRMSAPI.pdb
+C:\Users\niles\source\repos\Project\HRMSAPI\obj\Debug\net5.0\HRMSAPI.csproj.AssemblyReference.cache
+C:\Users\niles\source\repos\Project\HRMSAPI\obj\Debug\net5.0\HRMSAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niles\source\repos\Project\HRMSAPI\obj\Debug\net5.0\HRMSAPI.AssemblyInfoInputs.cache
+C:\Users\niles\source\repos\Project\HRMSAPI\obj\Debug\net5.0\HRMSAPI.AssemblyInfo.cs
+C:\Users\niles\source\repos\Project\HRMSAPI\obj\Debug\net5.0\HRMSAPI.csproj.CoreCompileInputs.cache
+C:\Users\niles\source\repos\Project\HRMSAPI\obj\Debug\net5.0\HRMSAPI.dll
+C:\Users\niles\source\repos\Project\HRMSAPI\obj\Debug\net5.0\ref\HRMSAPI.dll
+C:\Users\niles\source\repos\Project\HRMSAPI\obj\Debug\net5.0\HRMSAPI.pdb

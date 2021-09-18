@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HRMSAPI\HRMSAPI.csproj" />
+    <ProjectReference Include="..\HRMSDeptModule\HRMSDeptModule.csproj" />
+    <ProjectReference Include="..\HRMSModule\HRMSModule.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HRMSDeptModule">
+      <HintPath>..\HRMSDeptModule\bin\Debug\net5.0\HRMSDeptModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
