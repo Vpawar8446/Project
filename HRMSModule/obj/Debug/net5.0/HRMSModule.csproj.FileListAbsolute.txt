@@ -2,7 +2,6 @@ C:\Users\niles\source\repos\Project\HRMSModule\bin\Debug\net5.0\HRMSModule.deps.
 C:\Users\niles\source\repos\Project\HRMSModule\bin\Debug\net5.0\HRMSModule.dll
 C:\Users\niles\source\repos\Project\HRMSModule\bin\Debug\net5.0\ref\HRMSModule.dll
 C:\Users\niles\source\repos\Project\HRMSModule\bin\Debug\net5.0\HRMSModule.pdb
-C:\Users\niles\source\repos\Project\HRMSModule\obj\Debug\net5.0\HRMSModule.csproj.AssemblyReference.cache
 C:\Users\niles\source\repos\Project\HRMSModule\obj\Debug\net5.0\HRMSModule.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\niles\source\repos\Project\HRMSModule\obj\Debug\net5.0\HRMSModule.AssemblyInfoInputs.cache
 C:\Users\niles\source\repos\Project\HRMSModule\obj\Debug\net5.0\HRMSModule.AssemblyInfo.cs
@@ -10,3 +9,4 @@ C:\Users\niles\source\repos\Project\HRMSModule\obj\Debug\net5.0\HRMSModule.cspro
 C:\Users\niles\source\repos\Project\HRMSModule\obj\Debug\net5.0\HRMSModule.dll
 C:\Users\niles\source\repos\Project\HRMSModule\obj\Debug\net5.0\ref\HRMSModule.dll
 C:\Users\niles\source\repos\Project\HRMSModule\obj\Debug\net5.0\HRMSModule.pdb
+C:\Users\niles\source\repos\Project\HRMSModule\obj\Debug\net5.0\HRMSModule.csproj.AssemblyReference.cache

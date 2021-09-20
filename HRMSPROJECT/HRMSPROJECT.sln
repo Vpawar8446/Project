@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRMSAPI", "..\HRMSAPI\HRMSA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRMSModule", "..\HRMSModule\HRMSModule.csproj", "{9DA5AB81-F161-4D94-B435-CCC2BC06A6FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMSDeptModule", "..\HRMSDeptModule\HRMSDeptModule.csproj", "{32EFFFDB-3428-4687-9031-7E6B629A23EE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{9DA5AB81-F161-4D94-B435-CCC2BC06A6FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DA5AB81-F161-4D94-B435-CCC2BC06A6FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DA5AB81-F161-4D94-B435-CCC2BC06A6FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32EFFFDB-3428-4687-9031-7E6B629A23EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32EFFFDB-3428-4687-9031-7E6B629A23EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32EFFFDB-3428-4687-9031-7E6B629A23EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32EFFFDB-3428-4687-9031-7E6B629A23EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

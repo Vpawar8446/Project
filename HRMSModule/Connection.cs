@@ -25,13 +25,13 @@ namespace HRMSModule
 
                 con = new SqlConnection();
                 con.ConnectionString = connstr;
-            Console.WriteLine();
-            Console.WriteLine("---------------------------------------------------------------------------------------");
-            Console.WriteLine("******************************* WELCOME IN HRMS ***************************************");
-            Console.WriteLine("---------------------------------------------------------------------------------------");
+                Console.WriteLine();
+                Console.WriteLine("---------------------------------------------------------------------------------------");
+                Console.WriteLine("******************************* WELCOME IN HRMS ***************************************");
+                Console.WriteLine("---------------------------------------------------------------------------------------");
 
 
-        }
+            }
 
         //Display record by given dept_Id ,dept_Name in both table using full join
         public static void DisplayData()
@@ -40,10 +40,10 @@ namespace HRMSModule
             string query = " select ed.*,dd.* from EmployeeDetails ed FULL JOIN DepartmentDetails dd ON ed.Employee_ID =dd.Employee_ID order by ed.Name";
             cmd = new SqlCommand(query, con);
             dr = cmd.ExecuteReader();
-            Console.WriteLine("Employee_ID \t Name \t\t EmailId \t\t ContactNo \t Address \t Salary \t Dept_ID \t Dept_Name \t Job_Name");
+            Console.WriteLine("Employee_ID || Name \t|| EmailId \t\t|| ContactNo \t|| Address \t|| Salary \t|| Dept_ID \t|| Dept_Name \t|| Job_Name");
             while (dr.Read())
             {
-                Console.WriteLine("{0} \t\t {1} \t\t {2} \t {3} \t {4} \t {5} \t {6} \t\t {7} \t {8}",
+                Console.WriteLine("{0} \t|| {1} \t|| {2} \t||  {3} \t|| {4} \t|| {5} \t|| {6} \t|| {7} \t|| {8}",
                dr["Employee_ID"], dr["Name"], dr["EmailId"], dr["ContactNo"], dr["Address"], dr["Salary"], dr["Dept_ID"], dr["Dept_Name"], dr["Job_Name"]);
             }
             dr.Close();
@@ -145,7 +145,7 @@ namespace HRMSModule
             Console.WriteLine("Employee_ID \t Name \t\t EmailId \t\t ContactNo \t Address \t Salary \t Dept_ID \t Dept_Name \t Job_Name");
             while (dr.Read())
             {
-                Console.WriteLine("{0} \t\t {1} \t {2} \t {3} \t {4} \t {5} \t {6} \t\t {7} \t {8}",
+                Console.WriteLine("{0} \t\t|| {1} \t|| {2} \t|| {3} \t|| {4} \t|| {5} \t|| {6} \t|| {7} \t\t|| {8}",
                dr["Employee_ID"], dr["Name"], dr["EmailId"], dr["ContactNo"], dr["Address"], dr["Salary"], dr["Dept_ID"], dr["Dept_Name"], dr["Job_Name"]);
             }
             dr.Close();
@@ -172,10 +172,10 @@ namespace HRMSModule
             string query = "Select * from EmployeeDetails";
             cmd = new SqlCommand(query, con);
             dr = cmd.ExecuteReader();
-            Console.WriteLine("Employee_ID \t Name \t\t EmailId \t\t ContactNo \t Address \t Salary");
+            Console.WriteLine("Employee_ID \t Name \t\t EmailId \t\t ContactNo \t\t\t Address \t\t Salary");
             while (dr.Read())
             {
-                Console.WriteLine("{0} \t\t {1} \t  {2} \t {3} \t {4} \t\t{5}",
+                Console.WriteLine("{0} \t\t {1} \t  {2} \t {3} \t\t\t {4} \t\t\t{5}",
                dr["Employee_ID"], dr["Name"], dr["EmailId"], dr["ContactNo"], dr["Address"], dr["Salary"]);
             }
             dr.Close();
@@ -252,11 +252,13 @@ namespace HRMSModule
             string queri = "select * from DepartmentDetails ";
             cmd = new SqlCommand(queri, con);
             dr = cmd.ExecuteReader();
-            Console.WriteLine("Name \t\t EmailId \t Dept_Name \t Job_Name ");
+            Console.WriteLine("Dept_ID \t Employee_ID \t Dept_Name \t Job_Name ");
             while (dr.Read())
             {
                 Console.WriteLine("{0} \t\t {1} \t {2} \t {3} ",
-                dr["Name"], dr["EmailId"], dr["Dept_Name"], dr["Job_Name"]);
+                dr["Dept_ID"], dr["Employee_ID"], dr["Dept_Name"], dr["Job_Name"]);
+
+
             }
             dr.Close();
 
@@ -298,18 +300,23 @@ namespace HRMSModule
 
         public static void CountDeptEmpData(string Dept_Name)
         {
+            int count = 0;
             con.Open();
-            string dn = Dept_Name;
-            SqlCommand countCommand = new SqlCommand(" Select COUNT(*)  from DepartmentDetails where Dept_Name = @dn", con);
-            countCommand.Parameters.Add(new SqlParameter("dn",Dept_Name));
-            dr = countCommand.ExecuteReader();
+            //string dn = Dept_Name;
+            string queri = "Select Dept_Name from DepartmentDetails where Dept_Name = '"+Dept_Name+"';" ;
+            cmd = new SqlCommand(queri, con);
+           
+            dr = cmd.ExecuteReader();
             Console.WriteLine("Dept_Name");
             while (dr.Read())
             {
-                
-                Console.WriteLine("{0} ",  dr["Dept_Name"]);
+                count++;
+                Console.WriteLine("{0} ",  dr[1]);
             }
+            
             dr.Close();
+            
+            Console.WriteLine("Number of department in company are :" +count);
             Console.WriteLine("Commands executed... ");
             Console.WriteLine("Press enter to move to the next step ->");
             Console.WriteLine("___________________________________________________________");

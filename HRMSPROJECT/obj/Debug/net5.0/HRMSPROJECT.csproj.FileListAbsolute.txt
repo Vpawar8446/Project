@@ -25,5 +25,3 @@ C:\Users\niles\source\repos\Project\HRMSPROJECT\bin\Debug\net5.0\HRMSAPI.dll
 C:\Users\niles\source\repos\Project\HRMSPROJECT\bin\Debug\net5.0\HRMSModule.dll
 C:\Users\niles\source\repos\Project\HRMSPROJECT\bin\Debug\net5.0\HRMSAPI.pdb
 C:\Users\niles\source\repos\Project\HRMSPROJECT\bin\Debug\net5.0\HRMSModule.pdb
-C:\Users\niles\source\repos\Project\HRMSPROJECT\bin\Debug\net5.0\HRMSDeptModule.dll
-C:\Users\niles\source\repos\Project\HRMSPROJECT\bin\Debug\net5.0\HRMSDeptModule.pdb

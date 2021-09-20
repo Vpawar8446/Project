@@ -194,7 +194,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "System.Data.SqlClient": "4.8.3"
+          "System.Data.SqlClient": "4.8.3",
+          "System.Text.RegularExpressions": "4.3.1"
         },
         "compile": {
           "bin/placeholder/HRMSModule.dll": {}
@@ -731,7 +732,8 @@
       "HRMSAPI >= 1.0.0",
       "HRMSDeptModule >= 1.0.0",
       "HRMSModule >= 1.0.0",
-      "System.Data.SqlClient >= 4.8.3"
+      "System.Data.SqlClient >= 4.8.3",
+      "System.Text.RegularExpressions >= 4.3.1"
     ]
   },
   "packageFolders": {
@@ -791,6 +793,10 @@
           "System.Data.SqlClient": {
             "target": "Package",
             "version": "[4.8.3, )"
+          },
+          "System.Text.RegularExpressions": {
+            "target": "Package",
+            "version": "[4.3.1, )"
           }
         },
         "imports": [

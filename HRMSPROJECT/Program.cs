@@ -118,7 +118,7 @@ namespace HRMSPROJECT
                         Console.Write("Enter Your Employee ID : ");
                         Employee_ID = Console.ReadLine();
                         Connection.InsertDeptData(Dept_ID, Dept_Name, Job_Name, Employee_ID);
-                        //Connection.DisplayDeptData();
+                        Connection.DisplayDeptData();
                         break;
 
                    case "SD":
